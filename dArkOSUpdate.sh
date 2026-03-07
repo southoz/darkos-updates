@@ -15,7 +15,7 @@ if [ -f "$LOG_FILE" ]; then
 	sudo rm "$LOG_FILE"
 fi
 
-LOCATION="https://raw.githubusercontent.com/christianhaitian/darkos-updates/master"
+LOCATION="https://raw.githubusercontent.com/southoz/darkos-updates/master"
 
 sudo msgbox "ONCE YOU PROCEED WITH THIS UPDATE SCRIPT, DO NOT STOP THIS SCRIPT UNTIL IT IS COMPLETED OR THIS DISTRIBUTION MAY BE LEFT IN A STATE OF UNUSABILITY.  Make sure you've created a backup of this sd card as a precaution in case something goes very wrong with this process.  You've been warned!  Type OK in the next screen to proceed."
 my_var=`osk "Enter OK here to proceed." | tail -n 1`
