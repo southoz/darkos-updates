@@ -406,7 +406,7 @@ if [ ! -f "/home/ark/.config/.update01302026" ]; then
 	sudo rm -fv /home/ark/rk3566-353* | tee -a "$LOG_FILE"
 
 	printf "\nUpdate boot text to reflect current version of dArkOS\n" | tee -a "$LOG_FILE"
-	sudo sed -i "/title\=/c\title\=dArkOS ($UPDATE_DATE)" /usr/share/plymouth/themes/text.plymouth
+	sudo sed -i "/title\=/c\title\=dArkOSRE ($UPDATE_DATE)" /usr/share/plymouth/themes/text.plymouth
 	echo "$UPDATE_DATE" > /home/ark/.config/.VERSION
 
 	touch "$UPDATE_DONE"
